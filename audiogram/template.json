@@ -1,10 +1,10 @@
 {
   "name": "audiogram",
   "title": "Audiogram",
-  "description": "A square audiogram for a podcast: the quote appears word by word over a live waveform, with the host's name.",
+  "description": "A clip of someone speaking, made to be watched with the sound off as much as on: the real sound drives the words (each lit as it is said), the timeline and the speaker's ring. Square, tall and wide. Includes the SRT.",
   "width": 1080,
   "height": 1080,
   "fps": 60,
-  "seconds": 5,
+  "seconds": 16.9,
   "veymelo": "2"
 }
