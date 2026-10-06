@@ -4,7 +4,7 @@ import {useCurrentFrame} from 'veymelo';
 
 /**
  * A three.js stage driven by the frame: built once, rendered once per frame.
- * `res` lowers the drawing resolution when the result is shown small (the wall).
+ * `res` lowers the drawing resolution (1 = the design size).
  */
 export type Built<T> = {renderer: THREE.WebGLRenderer; scene: THREE.Scene; camera: THREE.PerspectiveCamera; parts: T};
 
@@ -31,35 +31,6 @@ export function useThree<T>(w: number, h: number, res: number, build: (r: THREE.
     if (built) draw(built, f);
   }, [f, built]);
   return ref;
-}
-
-/** A vertical gradient as a texture (sky, studio sweep). */
-export function gradientTexture(stops: [number, string][]) {
-  const c = document.createElement('canvas');
-  c.width = 4;
-  c.height = 512;
-  const g = c.getContext('2d')!;
-  const grd = g.createLinearGradient(0, 0, 0, 512);
-  for (const [o, col] of stops) grd.addColorStop(o, col);
-  g.fillStyle = grd;
-  g.fillRect(0, 0, 4, 512);
-  const t = new THREE.CanvasTexture(c);
-  t.colorSpace = THREE.SRGBColorSpace;
-  return t;
-}
-
-/** A soft round shadow (for contact shadows under objects). */
-export function blobTexture() {
-  const c = document.createElement('canvas');
-  c.width = c.height = 256;
-  const g = c.getContext('2d')!;
-  const grd = g.createRadialGradient(128, 128, 0, 128, 128, 128);
-  grd.addColorStop(0, 'rgba(0,0,0,0.55)');
-  grd.addColorStop(0.5, 'rgba(0,0,0,0.25)');
-  grd.addColorStop(1, 'rgba(0,0,0,0)');
-  g.fillStyle = grd;
-  g.fillRect(0, 0, 256, 256);
-  return new THREE.CanvasTexture(c);
 }
 
 /** Seeded random for building scenes the same way every time. */

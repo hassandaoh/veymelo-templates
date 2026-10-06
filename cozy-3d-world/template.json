@@ -1,10 +1,10 @@
 {
   "name": "cozy-3d-world",
   "title": "Cozy 3D world",
-  "description": "A low-poly 3D island for a game trailer: trees, houses, a lighthouse and a windmill under a slow camera, the title above.",
+  "description": "A 10-second trailer for a cozy island game, told as one camera move: a little sailboat crosses the sea to a low-poly island, ties up as dusk falls and the windows light, and the lighthouse beam leaves the title in its glare. three.js, its own music.",
   "width": 1920,
   "height": 1080,
   "fps": 60,
-  "seconds": 7,
+  "seconds": 10,
   "veymelo": "2"
 }
