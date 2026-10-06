@@ -24,7 +24,8 @@ export const HOOK = ['Where did', 'your money', 'go?'];
 
 /**
  * The receipts scattered in the hook: each flies into the phone and lands as
- * its row in Recent, top to bottom in the same order (so no paths cross).
+ * its row in Recent, top to bottom in the same order (so no paths cross). The
+ * one named like the opened budget is the row that opens.
  */
 export const CHIPS = [
   {icon: 'cup', label: 'Coffee', amount: '−$4.80', x: 110, y: 330, r: -5},
@@ -33,11 +34,11 @@ export const CHIPS = [
   {icon: 'ticket', label: 'Streaming', amount: '−$15.99', x: 560, y: 1310, r: -4},
 ] as const;
 
-/** One caption a screen, at the top, clear of the apps' own buttons. */
+/** One caption a beat, at the top, clear of the apps' own buttons. */
 export const CAPTIONS = {
-  overview: 'See every dollar.',
-  budgets: "Know what's left.",
-  goals: 'Save as you go.',
+  every: 'See every dollar.',
+  left: "Know what's left.",
+  kept: 'Keep it.',
 };
 
 export const BALANCE = 12480.2;
@@ -65,7 +66,12 @@ export const BUDGETS = [
 export const OPENED = 0;
 export const DAYS_LEFT = 9;
 
-export const GOAL = {icon: 'plane', name: 'Trip to Japan', saved: 1860, target: 3000, added: 240};
+/** What is left of the opened budget goes into the goal. */
+export const GOAL = {icon: 'plane', name: 'Trip to Japan', saved: 1062, target: 1500, added: BUDGETS[OPENED].of - BUDGETS[OPENED].spent};
+export const OTHER_GOALS = [
+  {name: 'Rainy day', saved: 2400, target: 5000},
+  {name: 'New laptop', saved: 640, target: 1800},
+];
 
 export const money = (value: number, cents = true) =>
   '$' + value.toLocaleString('en-US', {minimumFractionDigits: cents ? 2 : 0, maximumFractionDigits: cents ? 2 : 0});

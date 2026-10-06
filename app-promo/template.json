@@ -1,7 +1,7 @@
 {
   "name": "app-promo",
   "title": "App promo",
-  "description": "A 15-second 9:16 app ad: a question, the week's receipts pulled into the phone as rows, three features each shown by a tap (a chart, a budget, a goal), and the end card. Every word, number and colour is in src/content.ts.",
+  "description": "A 15-second 9:16 app ad told as one movement: receipts land as the app's rows, a row opens into what is left, what is left flows into a goal, and the goal becomes the icon. Every word, number and colour is in src/content.ts.",
   "width": 1080,
   "height": 1920,
   "fps": 60,

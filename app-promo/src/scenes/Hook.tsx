@@ -1,7 +1,7 @@
 import {Icon} from '../elements/icon';
 import {CHIPS, COLOR, HOOK} from '../content';
 import {exit, mix, move, prog} from '../motion';
-import {LANDS, ROWS, ROW_AT, ROW_W} from '../screens/Overview';
+import {LANDS, ROWS, ROW_AT, ROW_W} from '../screens/Home';
 import {PHONE_SCALE} from '../stage';
 import {onScreen} from '../stage';
 

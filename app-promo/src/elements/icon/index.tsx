@@ -11,10 +11,11 @@ const PATHS: Record<string, string> = {
   leaf: 'M5 19c0-8 5-13 14-14 0 9-5 14-13 14H5Zm0 0 7-7',
 };
 
-export function Icon({name, size = 32, color = 'currentColor', stroke = 1.8}: {name: string; size?: number; color?: string; stroke?: number}) {
+/** `draw` (0 to 1) draws the line in, from its start. */
+export function Icon({name, size = 32, color = 'currentColor', stroke = 1.8, draw = 1}: {name: string; size?: number; color?: string; stroke?: number; draw?: number}) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={stroke} strokeLinecap="round" strokeLinejoin="round" style={{display: 'block'}}>
-      <path d={PATHS[name] ?? ''} />
+      <path d={PATHS[name] ?? ''} {...(draw < 1 ? {pathLength: 1, strokeDasharray: 1, strokeDashoffset: 1 - draw} : {})} />
     </svg>
   );
 }

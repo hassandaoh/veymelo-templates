@@ -2,12 +2,12 @@ import {CAPTIONS, COLOR} from '../content';
 import {exit, prog} from '../motion';
 import {T} from '../timing';
 
-// One line a screen, top left, below the apps' top bar (12%) and clear of
-// their right-hand buttons (14%).
+// One line a beat, top left, below the apps' top bar (12%) and clear of
+// their right-hand buttons (14%); each leaves just before the next turn.
 const LINES = [
-  {text: CAPTIONS.overview, from: T.overview + 20, to: T.budgets - 14},
-  {text: CAPTIONS.budgets, from: T.budgets + 16, to: T.goals - 14},
-  {text: CAPTIONS.goals, from: T.goals + 16, to: T.end - 12},
+  {text: CAPTIONS.every, from: T.bars + 20, to: T.tapRow - 4},
+  {text: CAPTIONS.left, from: T.open + 20, to: T.peel - 4},
+  {text: CAPTIONS.kept, from: T.keep + 20, to: T.end - 12},
 ];
 
 export function Captions({f}: {f: number}) {
