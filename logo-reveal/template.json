@@ -1,0 +1,10 @@
+{
+  "name": "logo-reveal",
+  "title": "Logo reveal",
+  "description": "A logo reveal on deep blue: the orbit draws, a dot circles it, the name and line settle.",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "seconds": 5,
+  "veymelo": "2"
+}

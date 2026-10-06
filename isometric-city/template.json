@@ -1,0 +1,10 @@
+{
+  "name": "isometric-city",
+  "title": "Isometric city",
+  "description": "An isometric city for a delivery app: blocks rise one by one, a car drives through, the title beside it.",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "seconds": 4,
+  "veymelo": "2"
+}

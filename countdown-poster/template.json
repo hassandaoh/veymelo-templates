@@ -1,0 +1,10 @@
+{
+  "name": "countdown-poster",
+  "title": "Countdown poster",
+  "description": "A 9:16 festival poster: a countdown, then the name lands with a spinning date badge.",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "seconds": 4,
+  "veymelo": "2"
+}

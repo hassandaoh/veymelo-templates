@@ -1,0 +1,10 @@
+{
+  "name": "cozy-3d-world",
+  "title": "Cozy 3D world",
+  "description": "A low-poly 3D island for a game trailer: trees, houses, a lighthouse and a windmill under a slow camera, the title above.",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "seconds": 7,
+  "veymelo": "2"
+}

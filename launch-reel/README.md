@@ -25,7 +25,9 @@ product turns a short input into a visible result.
   small video (`r01-sneaker.tsx` … `r22-botanical.tsx`), listed in
   `registry.ts` with its shape (16:9, 9:16 or 1:1), the prompt typed for it
   and its sounds. Replace them with your product's own results; keep a few
-  that show range. `tools/peek.sh <id>` looks at one result alone.
+  that show range. `tools/peek.sh <id>` looks at one result alone. Each
+  result is also a template of its own in this repository (`sneaker-drop`,
+  `perfume-3d`, `kinetic-type` and the others).
 - **The app on screen**: `src/elements/viewer` (the app window), `chat` (the
   AI talking), `terminal`, `code`.
 - **The sound**: `tools/score.mjs` synthesizes the score and every effect

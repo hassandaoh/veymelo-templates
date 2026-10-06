@@ -1,0 +1,10 @@
+{
+  "name": "explainer",
+  "title": "Explainer",
+  "description": "How something works in four steps (rooftop solar: sun, panels, battery, home), as icons joined by a flowing line.",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "seconds": 6,
+  "veymelo": "2"
+}

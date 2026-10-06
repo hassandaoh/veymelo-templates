@@ -1,0 +1,10 @@
+{
+  "name": "caption-reel",
+  "title": "Caption reel",
+  "description": "A 9:16 talking-head reel, drawn: captions on every word, the stressed word highlighted.",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "seconds": 5,
+  "veymelo": "2"
+}

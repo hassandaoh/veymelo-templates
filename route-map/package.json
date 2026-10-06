@@ -1,0 +1,6 @@
+{
+  "name": "route-map",
+  "private": true,
+  "type": "module",
+  "dependencies": {}
+}

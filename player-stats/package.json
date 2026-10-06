@@ -1,0 +1,6 @@
+{
+  "name": "player-stats",
+  "private": true,
+  "type": "module",
+  "dependencies": {}
+}

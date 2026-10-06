@@ -1,0 +1,10 @@
+{
+  "name": "growth-chart",
+  "title": "Growth chart",
+  "description": "A year's growth as one dark, clean chart: the line draws, the area fills and the percentage counts up.",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "seconds": 5,
+  "veymelo": "2"
+}

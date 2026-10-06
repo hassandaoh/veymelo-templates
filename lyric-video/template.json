@@ -1,0 +1,10 @@
+{
+  "name": "lyric-video",
+  "title": "Lyric video",
+  "description": "A square lyric video: the line appears in a serif italic inside a pulsing ring of red bars.",
+  "width": 1080,
+  "height": 1080,
+  "fps": 60,
+  "seconds": 5,
+  "veymelo": "2"
+}

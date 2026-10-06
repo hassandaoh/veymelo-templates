@@ -1,0 +1,10 @@
+{
+  "name": "audiogram",
+  "title": "Audiogram",
+  "description": "A square audiogram for a podcast: the quote appears word by word over a live waveform, with the host's name.",
+  "width": 1080,
+  "height": 1080,
+  "fps": 60,
+  "seconds": 5,
+  "veymelo": "2"
+}
