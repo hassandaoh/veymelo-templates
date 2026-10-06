@@ -41,7 +41,9 @@ Make the video with Veymelo, then, in its project:
 npx veymelo@latest template save <name> --out <this repository>/<name>
 ```
 
-It adds the poster and a short preview (`--poster 4s`, `--preview 0-12s`).
+It adds the poster and a short preview (`--poster 4s`, `--preview 0-12s`), and
+updates `templates.json`, the index veymelo.com and `template list` read.
 Finish the README it drafts, look at the poster, then commit and push the
-folder: it shows on [veymelo.com](https://veymelo.com/#templates) within a few
-minutes.
+folder and the index: it shows on [veymelo.com](https://veymelo.com/#templates)
+within a few minutes. After changing files by hand, refresh the index with
+`npx veymelo@latest template index .`
