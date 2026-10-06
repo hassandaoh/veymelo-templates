@@ -2,6 +2,6 @@
   "name": "Caption reel",
   "width": 1080,
   "height": 1920,
-  "fps": 60,
-  "durationInFrames": 300
+  "fps": 30,
+  "durationInFrames": 799
 }

@@ -1,29 +1,28 @@
 import './fonts';
-import {AbsoluteFill, Audio, Sequence, useVideoConfig} from 'veymelo';
-import Social from './elements/social';
+import {AbsoluteFill, Caption, useCurrentFrame, useVideoConfig} from 'veymelo';
+import {chunks} from './edit';
+import {Captions} from './elements/Captions';
+import {End} from './elements/End';
+import {Footage} from './elements/Footage';
+import {Hook} from './elements/Hook';
 
-// Drawn at 1080×1920 (its design size) and scaled to cover any frame the video
-// is rendered at. Every sound is caused by the picture, on its frame.
-
-const DESIGN = {w: 1080, h: 1920};
-/** The sounds: [frame, effect in assets/sfx, volume]. */
-const SOUNDS: [number, string, number][] = [[0,"pop",0.3],[40,"pop",0.3],[96,"pop",0.3]];
-/** Each effect's length in frames. */
-const LEN: Record<string, number> = {"pop":6};
+// A captioned talking reel, 9:16: the clip cut on the words (pauses and asides
+// out, a punch-in on new sentences), big captions a few words at a time with
+// the word being said lit, a hook over the first seconds, and an end card.
+// The edit, the words and the colours are all in src/content.ts.
 
 export default function Composition() {
+  const f = useCurrentFrame();
   const {width, height} = useVideoConfig();
-  const scale = Math.max(width / DESIGN.w, height / DESIGN.h);
+  const u = Math.min(width / 1080, height / 1920);
   return (
-    <AbsoluteFill style={{background: '#000', overflow: 'hidden'}}>
-      <div style={{position: 'absolute', left: (width - DESIGN.w * scale) / 2, top: (height - DESIGN.h * scale) / 2, width: DESIGN.w, height: DESIGN.h, transform: `scale(${scale})`, transformOrigin: '0 0'}}>
-        <Social w={DESIGN.w} h={DESIGN.h} />
-      </div>
-      {SOUNDS.map(([at, sound, volume], i) => (
-        <Sequence key={i} from={at} durationInFrames={LEN[sound]} name={`sfx ${sound}`}>
-          <Audio src={`assets/sfx/${sound}.wav`} volume={volume * 0.72} />
-        </Sequence>
-      ))}
+    <AbsoluteFill style={{background: '#000'}}>
+      <Footage width={width} height={height} />
+      <Captions f={f} u={u} />
+      <Hook f={f} u={u} />
+      <End f={f} u={u} />
+      {/* The same words as a captions file (SRT/VTT) for the platforms; the picture's own captions are above. */}
+      <Caption cues={chunks.map(chunk => ({start: chunk.start, end: chunk.end, words: chunk.words.map(({text, start, end}) => ({text, start, end}))}))} style={{opacity: 0}} name="Captions file" />
     </AbsoluteFill>
   );
 }

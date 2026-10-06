@@ -1,10 +1,10 @@
 {
   "name": "caption-reel",
   "title": "Caption reel",
-  "description": "A 9:16 talking-head reel, drawn: captions on every word, the stressed word highlighted.",
+  "description": "A talking clip made into a 9:16 reel: cut on the words (pauses and asides out, a punch-in on new sentences), big captions a few words at a time with the word being said lit, a hook over the first seconds and an end card. Includes the SRT.",
   "width": 1080,
   "height": 1920,
-  "fps": 60,
-  "seconds": 5,
+  "fps": 30,
+  "seconds": 26.6,
   "veymelo": "2"
 }
