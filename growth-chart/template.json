@@ -1,10 +1,10 @@
 {
   "name": "growth-chart",
   "title": "Growth chart",
-  "description": "A year's growth as one dark, clean chart: the line draws, the area fills and the percentage counts up.",
+  "description": "A year of growth as a printed chart: a headline that states the finding, the line drawn month by month with notes where things happened, last year for comparison, and a bracket marking the change. Every number comes from src/data.json. Wide and tall.",
   "width": 1920,
   "height": 1080,
   "fps": 60,
-  "seconds": 5,
+  "seconds": 15,
   "veymelo": "2"
 }

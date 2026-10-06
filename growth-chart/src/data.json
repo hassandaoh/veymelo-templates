@@ -1,0 +1,16 @@
+{
+  "headline": "Northwind grew 184% in a year",
+  "subtitle": "Monthly revenue, $ thousands, 2026",
+  "unit": "$",
+  "scale": "k",
+  "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  "values": [210, 224, 236, 262, 295, 340, 372, 401, 446, 512, 553, 596],
+  "lastYear": [150, 155, 158, 162, 165, 170, 176, 181, 188, 196, 203, 210],
+  "year": 2026,
+  "milestones": [
+    {"month": 3, "label": "New pricing"},
+    {"month": 5, "label": "Launch in Japan"},
+    {"month": 9, "label": "Crossed $500k a month"}
+  ],
+  "source": "Example data"
+}

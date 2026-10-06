@@ -1,24 +1,45 @@
 # Growth chart
 
-A year's growth as one dark, clean chart: the line draws, the area fills and the percentage counts up.
+A year of growth as a printed chart, in 15 seconds. The headline states the
+finding (it is on the cover), the line draws month by month with a short note
+where something happened, last year comes in for comparison, and a bracket
+marks the change. A quiet tone follows the line as it draws. 1920×1080 at
+60 fps, with a tall cut (1080×1920) built in. "Northwind" and its numbers
+are example data.
 
 ![Growth chart](poster.jpg)
 
-1920×1080 at 60 fps, 5 seconds. One scene, ready to grow into a
-longer video. It began as one of the results in the [launch reel](../launch-reel).
+## Use your own numbers
+
+Everything it says comes from `src/data.json`:
+
+- `headline`: the finding, in a sentence (the cover);
+- `subtitle`: what is measured, in what unit, when;
+- `months`, `values`: the series; `lastYear`: the comparison (the same
+  length);
+- `milestones`: `{month, label}` notes on the line, at the months they
+  happened;
+- `unit`, `scale`, `year`, `source`.
+
+The growth, the axis, every label and the tone are worked out from the data,
+so they always agree with it. After changing the data, run
+`node tools/sound.mjs` and
+`veymelo ffmpeg -- -y -i assets/score.wav -c:a aac -b:a 192k assets/score.m4a`
+so the tone follows the new line.
 
 ## What to change
 
-- **The picture**: `src/elements/infographic/index.tsx`. Its colours are constants at
-  the top, its words, numbers and shapes are in the JSX, and its timing is in
-  frames (60 a second) with `k()` (0 to 1 between two frames) and `sp()` (a
-  spring) from `src/kit.ts`.
-- **The length**: `durationInFrames` in `veymelo.config.json`; add screens in
-  `src/Video.tsx`. It is drawn at its design size (1920×1080) and scaled
-  to cover any frame you render.
-- **The sound**: `SOUNDS` in `src/Video.tsx`: rise, tick (in `assets/sfx`), each on the frame its cause happens.
-- **The type**: `src/fonts.ts`: Inter (open-licensed, in `assets/fonts`).
+- **The look**: `COLOR` in `src/content.ts` (the paper, the ink, the one
+  accent); the fonts in `src/fonts.ts`.
+- **The moments**: `src/timing.json` (the gridlines, the line, last year, the
+  change), read by the picture and by the sound.
+- **Where things sit**: `frame()` in `src/chart.ts`, one layout for wide and
+  one for tall.
 
 ## What to keep
 
-The line and the number moving together and landing at the same moment.
+- A headline that says the finding, not the topic.
+- One accent: this year's line and the change; everything else is ink and
+  grey.
+- Notes on the line, not in boxes or a legend; the source at the foot.
+- The camera still: only the line moves.
