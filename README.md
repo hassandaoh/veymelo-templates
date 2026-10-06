@@ -9,7 +9,8 @@ footage first, then the colours, type and motion, then anything else.
 
 ## Use a template
 
-Tell your AI which template to start from, or ask it to choose one:
+Download one at [veymelo.com](https://veymelo.com/#templates) and give the
+folder to your AI, or tell your AI which template to start from:
 
 ```
 npx veymelo@latest template list
@@ -26,6 +27,7 @@ A template can also come from any public GitHub folder
   template.json   its name, what it is for, sizes, length, Veymelo version
   README.md       what to change and what to keep
   poster.jpg      one frame of it
+  preview.mp4     a few seconds of it, small, for veymelo.com
   src/            the video's code
   assets/         the fonts, logos and media it uses
   package.json    the packages it uses
@@ -39,4 +41,7 @@ Make the video with Veymelo, then, in its project:
 npx veymelo@latest template save <name> --out <this repository>/<name>
 ```
 
-Finish the README it drafts, look at the poster, then commit the folder.
+It adds the poster and a short preview (`--poster 4s`, `--preview 0-12s`).
+Finish the README it drafts, look at the poster, then commit and push the
+folder: it shows on [veymelo.com](https://veymelo.com/#templates) within a few
+minutes.
