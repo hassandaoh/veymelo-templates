@@ -5,7 +5,7 @@ How something works in four steps (rooftop solar: sun, panels, battery, home), a
 ![Explainer](poster.jpg)
 
 1920×1080 at 60 fps, 6 seconds. One scene, ready to grow into a
-longer video. It began as one of the results in the [launch reel](../launch-reel).
+longer video.
 
 ## What to change
 

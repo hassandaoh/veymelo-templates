@@ -5,7 +5,7 @@ A bold launch ad: the shoe flies in onto an orange disc, NEW DROP, the date, the
 ![Sneaker drop](poster.jpg)
 
 1920×1080 at 60 fps, 5 seconds. One scene, ready to grow into a
-longer video. It began as one of the results in the [launch reel](../launch-reel).
+longer video.
 
 ## What to change
 

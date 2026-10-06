@@ -5,7 +5,7 @@ Soft 3D shapes for a brand intro: a capsule, a ring, a cone, spheres and a cube 
 ![Soft 3D shapes](poster.jpg)
 
 1080×1080 at 60 fps, 7 seconds, three.js. One scene, ready to grow into a
-longer video. It began as one of the results in the [launch reel](../launch-reel).
+longer video.
 
 ## What to change
 

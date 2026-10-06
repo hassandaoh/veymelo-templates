@@ -5,7 +5,7 @@ A menu promo for a ramen dish: the toppings drop into the bowl one by one, the n
 ![Menu promo](poster.jpg)
 
 1920×1080 at 60 fps, 4 seconds. One scene, ready to grow into a
-longer video. It began as one of the results in the [launch reel](../launch-reel).
+longer video.
 
 ## What to change
 

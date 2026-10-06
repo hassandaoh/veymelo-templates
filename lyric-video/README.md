@@ -5,7 +5,7 @@ A square lyric video: the line appears in a serif italic inside a pulsing ring o
 ![Lyric video](poster.jpg)
 
 1080×1080 at 60 fps, 5 seconds. One scene, ready to grow into a
-longer video. It began as one of the results in the [launch reel](../launch-reel).
+longer video.
 
 ## What to change
 

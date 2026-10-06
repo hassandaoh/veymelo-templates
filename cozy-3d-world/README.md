@@ -5,7 +5,7 @@ A low-poly 3D island for a game trailer: trees, houses, a lighthouse and a windm
 ![Cozy 3D world](poster.jpg)
 
 1920×1080 at 60 fps, 7 seconds, three.js. One scene, ready to grow into a
-longer video. It began as one of the results in the [launch reel](../launch-reel).
+longer video.
 
 ## What to change
 

@@ -5,7 +5,7 @@ A trip as a route map: the line draws from stop to stop, each stop labelled with
 ![Route map](poster.jpg)
 
 1920×1080 at 60 fps, 7 seconds. One scene, ready to grow into a
-longer video. It began as one of the results in the [launch reel](../launch-reel).
+longer video.
 
 ## What to change
 

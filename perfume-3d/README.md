@@ -5,7 +5,7 @@ A 3D perfume ad: a glass bottle on a plinth in slow, soft light, with a serif na
 ![Perfume in 3D](poster.jpg)
 
 1920×1080 at 60 fps, 7 seconds, three.js. One scene, ready to grow into a
-longer video. It began as one of the results in the [launch reel](../launch-reel).
+longer video.
 
 ## What to change
 

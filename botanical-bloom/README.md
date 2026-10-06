@@ -5,7 +5,7 @@ Square botanical line art: stems grow, flowers bloom, then the title in a serif 
 ![Botanical bloom](poster.jpg)
 
 1080×1080 at 60 fps, 5 seconds, three.js. One scene, ready to grow into a
-longer video. It began as one of the results in the [launch reel](../launch-reel).
+longer video.
 
 ## What to change
 
